@@ -1,64 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20241206175346">
-  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="static/favicon/site.webmanifest">
-  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#f02121">
-  <link rel="shortcut icon" href="static/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#f02121">
-  <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#f02121">
-  <title>key_consulting</title>
-</head>
+  @@include('html/head.html', {
+    'title': 'key_consulting'
+  })
   <body class="u-scrollbar">
+    <style>
+      html {
+        font-size: .05208333333vw;
+      }
+    </style>
 
     <div id="root" class="site">
       <div class="site__inner">
-        
-        <header class="header header--position-fixed site__header">
-  <div class="container header__container">
-    <div class="header__dropdown">
-      <nav class="header__nav" role="navigation">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="#intro" class="header__nav-link js-anchor">О компании</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#intro" class="header__nav-link js-anchor">Команда</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#intro" class="header__nav-link js-anchor">Принципы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <a href="/" class="header__logo">
-      <picture>
-        <img src="images/logo-brand.svg" width="20" height="26" alt="Стратегический консалтинг">
-      </picture>
-    </a>
-    <div class="header__aside">
-      <ul class="header__aside-switch language-switch">
-        <li class="language-switch__item">
-          <a href="#" class="language-switch__link is-active">Ru</a>
-        </li>
-        <li class="language-switch__item">
-          <a href="#" class="language-switch__link">En</a>
-        </li>
-      </ul>
-      <a href="#" class="header__aside-link-call">Связаться с нами</a>
-    </div>
-  </div>
-</header>
-        
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header header--position-fixed'
+        })
+        <!-- header END -->
         <main role="main" class="site__main">
-          
+          <!-- intro BEGIN -->
           <section class="intro">
             <div class="intro__video">
               <video autoplay muted loop playsinline preload="auto" poster="images/intro-hero-placeholder.jpg" class="intro__video-el">
@@ -81,7 +41,7 @@
                         <p>В эпоху постоянных перемен мы помогаем клиентам находить эффективные решения и&nbsp;превращать вызовы в&nbsp;возможности. Наша экспертиза — ваш компас в&nbsp;быстро меняющемся мире.</p>
                       </div>
                       <div class="intro__footer">
-                        <a href="#" class="btn btn--size-md btn--theme-white-outline intro__footer-btn">
+                        <a href="#" class="btn btn--theme-white-outline btn--size-md intro__footer-btn">
                           <span class="btn__inner">
                             <span class="btn__content">
                               <span class="btn__title">Сформулировать задачу</span>
@@ -100,8 +60,8 @@
               </div>
             </div>
           </section>
-          
-          
+          <!-- intro END -->
+          <!-- about BEGIN -->
           <section class="about">
             <div class="container about__container">
               <div class="row about__row">
@@ -114,10 +74,10 @@
                   <div class="about__content">
                     <h2 class="about__title">Подход</h2>
                     <div class="row about__appeal-list">
-                      <div class="row__col--2 about__appeal u-content">
+                      <div class="row__col--2 u-content about__appeal">
                         <p>Наша команда обладает глубоким пониманием принципов и механизмов работы с&nbsp;разными группами стейкхолдеров. Мы объективно оцениваем внешний контекст, что позволяет предлагать нам эффективные коммуникационные решения.</p>
                       </div>
-                      <div class="row__col--2 about__appeal u-content">
+                      <div class="row__col--2 u-content about__appeal">
                         <p>Наш подход сочетает глубокий анализ, инновационное мышление и практический опыт.</p>
                       </div>
                     </div>
@@ -146,11 +106,11 @@
               </div>
             </div>
           </section>
-          
-          
+          <!-- about END -->
+          <!-- principles BEGIN -->
           <section class="principles">
             <div class="container principles__container">
-              <div class="principles__header section-header">
+              <div class="section-header principles__header">
                 <div class="section-header__row">
                   <div class="section-header__col section-header__col--title">
                     <h2 class="section-header__title">Наши принципы</h2>
@@ -199,29 +159,17 @@
               </div>
             </div>
           </section>
-          
+          <!-- principles END -->
         </main>
-        
-        <footer class="footer site__footer">
-  <div class="container footer__container">
-  </div>
-</footer>
-        
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
       </div>
-      <div class="popup" data-popup="popup-form" data-close-overlay>
-  <div class="popup__wrapper" data-close-overlay>
-    <div class="popup__content popup__content--size-md popup__content--theme-black">
-      <button type="button" class="js-button-close popup__btn-close">
-        <svg class="u-icon btn-close__icon">
-          <use xlink:href="images/icons/icons.svg#close"></use>
-        </svg>
-      </button>
-      
-    </div>
-  </div>
-</div>
+      @@include('html/modal.html')
     </div>
 
-    <script src="js/app.min.js??=v=20241206175346"></script>
+    @@include('html/script.html')
   </body>
 </html>
