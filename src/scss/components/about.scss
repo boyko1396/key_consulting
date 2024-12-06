@@ -1,0 +1,39 @@
+.about {
+  padding: 200rem 0;
+  &__container {
+  }
+  &__row {
+  }
+  &__col {
+    &--header {
+    }
+    &--content {
+    }
+  }
+  &__header {
+  }
+  &__suptitle {
+    margin: 0;
+    font-weight: bold;
+    color: rgba($fontColor, .5);
+  }
+  &__content {
+  }
+  &__title {
+    margin: 0 0 75rem;
+  }
+  &__appeal {
+    &-list {
+      margin-bottom: 75rem;
+    }
+  }
+  &__list {
+    &-card {
+      padding: 25rem 0 75rem;
+      border-top: 1px solid rgba($accentColor, .3);
+      &-title {
+        margin: 0;
+      }
+    }
+  }
+}

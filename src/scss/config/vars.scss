@@ -1,0 +1,71 @@
+$siteResolution: 1px;
+$mainFont: 'PP Neue Montreal';
+$mainWeight: 400;
+$lineHeight1: 1.3;
+$lineHeight2: 1.25;
+$lineHeight3: 1.2;
+$lineHeight4: 1;
+$lineHeight5: .75;
+$lineHeight6: 1.5;
+$lineHeight7: .9;
+$lineHeightDefault: $lineHeight3;
+
+$containerWidthMd: 1248rem;
+
+$gap: 10rem;
+$gapFluid: 20rem;
+
+$whiteColor: #ffffff;
+$greyColor: #F2F2F2;
+$blackColor: #000000;
+$greenColor: #104136;
+$greenLightColor: #185548;
+$greenSteelColor: #144238;
+$accentColor: $greenColor;
+
+$bgSite: $greyColor;
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $greenColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1440px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 20rem;
+  --fs-1: 85rem;
+  --fs-2: 60rem;
+  --fs-3: 40rem;
+  --fs-4: 20rem;
+  --fs-5: 16rem;
+  --fs-6: 16rem;
+  --fs-7: 14rem;
+  --fs-8: 12rem;
+  --fs-9: 10rem;
+
+  --gap: 10rem;
+  --gap-: -10rem;
+  --gap-fluid: 20rem;
+  --gap-fluid-: -20rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+  }
+}

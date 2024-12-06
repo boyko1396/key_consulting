@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'key_consulting'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header header--position-fixed'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- intro BEGIN -->
+          <section class="intro">
+            <div class="intro__video">
+              <video autoplay muted loop playsinline preload="auto" poster="images/intro-hero-placeholder.jpg" class="intro__video-el">
+                <source src="static/video/intro-hero.mp4" type="video/mp4">
+                <source src="static/video/intro-hero.webm" type="video/webm">
+              </video>
+            </div>
+            <div class="container intro__container">
+              <div class="intro__main">
+                <div class="intro__main-row">
+                  <div class="intro__main-col intro__main-col--header">
+                    <div class="intro__header">
+                      <h1 class="intro__title">Стратегический консалтинг</h1>
+                      <h2 class="intro__subtitle">(Мы) ищем ключ к решению ваших проблем</h2>
+                    </div>
+                  </div>
+                  <div class="intro__main-col intro__main-col--main">
+                    <div class="intro__content">
+                      <div class="u-content intro__text">
+                        <p>В эпоху постоянных перемен мы помогаем клиентам находить эффективные решения и&nbsp;превращать вызовы в&nbsp;возможности. Наша экспертиза — ваш компас в&nbsp;быстро меняющемся мире.</p>
+                      </div>
+                      <div class="intro__footer">
+                        <a href="#" class="btn btn--theme-white-outline btn--size-md intro__footer-btn">
+                          <span class="btn__inner">
+                            <span class="btn__content">
+                              <span class="btn__title">Сформулировать задачу</span>
+                            </span>
+                            <span class="btn__icon btn__icon--dir-rtl">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- intro END -->
+          <!-- about BEGIN -->
+          <section class="about">
+            <div class="container about__container">
+              <div class="row about__row">
+                <div class="row__col--2 about__col about__col--header">
+                  <header class="about__header">
+                    <p class="about__suptitle">О компании</p>
+                  </header>
+                </div>
+                <div class="row__col--2 about__col about__col--content">
+                  <div class="about__content">
+                    <h2 class="about__title">Подход</h2>
+                    <div class="row about__appeal-list">
+                      <div class="row__col--2 u-content about__appeal">
+                        <p>Наша команда обладает глубоким пониманием принципов и механизмов работы с&nbsp;разными группами стейкхолдеров. Мы объективно оцениваем внешний контекст, что позволяет предлагать нам эффективные коммуникационные решения.</p>
+                      </div>
+                      <div class="row__col--2 u-content about__appeal">
+                        <p>Наш подход сочетает глубокий анализ, инновационное мышление и практический опыт.</p>
+                      </div>
+                    </div>
+                    <div class="about__list">
+                      <article class="about__list-card">
+                        <h3 class="about__list-card-title">Работаем со смыслами — помогаем создать продуктивный диалог на&nbsp;универсальном языке</h3>
+                      </article>
+                      <article class="about__list-card">
+                        <h3 class="about__list-card-title">Работаем с контекстами — на любую задачу смотрим с&nbsp;разных сторон</h3>
+                      </article>
+                      <article class="about__list-card">
+                        <h3 class="about__list-card-title">Работаем со сложностью — труднодостижимое разбираем на решаемые задачи</h3>
+                      </article>
+                      <article class="about__list-card">
+                        <h3 class="about__list-card-title">Обеспечиваем ясное и&nbsp;эффективное взаимодействие — в&nbsp;бизнес-среде, обществе, государстве и&nbsp;между ними</h3>
+                      </article>
+                      <article class="about__list-card">
+                        <h3 class="about__list-card-title">Помогаем не только адаптироваться к&nbsp;постоянному изменению, но и&nbsp;использовать его для роста и&nbsp;развития</h3>
+                      </article>
+                      <article class="about__list-card">
+                        <h3 class="about__list-card-title">Способствуем созданию благоприятного общественного и&nbsp;делового климата</h3>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about END -->
+          <!-- principles BEGIN -->
+          <section class="principles">
+            <div class="container principles__container">
+              <div class="section-header principles__header">
+                <div class="section-header__row">
+                  <div class="section-header__col section-header__col--title">
+                    <h2 class="section-header__title">Наши принципы</h2>
+                  </div>
+                  <div class="section-header__col section-header__col--aside">
+                    <p class="fs-2 section-header__count">[5]</p>
+                  </div>
+                </div>
+              </div>
+              <div class="principles__list">
+                <article class="principles-card principles__list-card">
+                  <div class="principles-card__inner">
+                    <div class="principles-card__content">
+                      <h3 class="principles-card__title">Действие в интересах клиента с&nbsp;опорой на этические принципы и&nbsp;оценкой отложенных эффектов</h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="principles-card principles__list-card">
+                  <div class="principles-card__inner">
+                    <div class="principles-card__content">
+                      <h3 class="principles-card__title">Работа с опорой на исследовательский подход и&nbsp;обоснованность вариантов решения</h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="principles-card principles__list-card">
+                  <div class="principles-card__inner">
+                    <div class="principles-card__content">
+                      <h3 class="principles-card__title">Определение баланса плюсов и&nbsp;минусов при выборе решения</h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="principles-card principles__list-card">
+                  <div class="principles-card__inner">
+                    <div class="principles-card__content">
+                      <h3 class="principles-card__title">Win-Win подход: выстраивание взаимовыгодного сотрудничества</h3>
+                    </div>
+                  </div>
+                </article>
+                <article class="principles-card principles__list-card">
+                  <div class="principles-card__inner">
+                    <div class="principles-card__content">
+                      <h3 class="principles-card__title">Фокусирование на&nbsp;решаемом, выделенном из&nbsp;общего</h3>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- principles END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

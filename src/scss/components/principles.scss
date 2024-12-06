@@ -1,0 +1,25 @@
+.principles {
+  background: $greenColor;
+  padding: $gap 0;
+  color: $whiteColor;
+  &__container {
+  }
+  &__header {
+  }
+  &__list {
+    display: flex;
+    counter-reset: principles-counter;
+    &-card {
+      flex: 1;
+      &:not(:last-child) {
+        border-right: 1px solid rgba($whiteColor, .3);
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
